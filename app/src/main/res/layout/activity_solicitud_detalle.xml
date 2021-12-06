@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pe.gob.sunat.base.android.ui.solicitud.SolicitudDetalleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="?actionBarSize"
+        >
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/textView_detail05_tipo_descripcion"
+                    android:text="@string/detail_tipo_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/margin_min"
+                    android:layout_marginStart="@dimen/margin_max"
+                    android:layout_marginEnd="@dimen/margin_max"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_detail_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_detail05_tipo_descripcion"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/margin_min"
+                    app:cardCornerRadius="8dp"
+
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/icon_code"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView_detail05_num_solicitud_descripcion"
+                            android:src="@drawable/ic_hash"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginStart="@dimen/default_margin"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_num_solicitud"
+                            android:text="Nro. Solicitud"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toEndOf="@+id/icon_code"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginStart="@dimen/margin_min"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_num_solicitud_descripcion"
+                            android:text="[Num Solicitud]"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="@+id/textView_detail05_num_solicitud"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_detail05_num_solicitud"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginBottom="@dimen/margin_min"
+                            android:layout_marginEnd="@dimen/margin_max"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon_calendar"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView_detail05_fecha_emision"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView_detail05_fecha_emision_descripcion"
+                            android:src="@drawable/ic_small_calendar"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginEnd="@dimen/margin_min"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_fecha_emision"
+                            android:text="@string/detail_fecha_emision"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginEnd="36dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_fecha_emision_descripcion"
+                            android:text="@string/detail_fecha_emision_descripcion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="@+id/textView_detail05_fecha_emision"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_detail05_fecha_emision"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginEnd="@dimen/margin_max"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/icon_user"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="@dimen/default_margin"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_user"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView_detail05_solicitante_descripcion"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView_detail05_solicitante" />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_solicitante"
+                            android:text="@string/detail_solicitante"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toEndOf="@+id/icon_user"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_detail05_num_solicitud_descripcion"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:layout_marginStart="@dimen/margin_min"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_solicitante_descripcion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginBottom="@dimen/margin_min"
+                            android:text="@string/detail_solicitante_descripcion"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_detail05_solicitante" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <FrameLayout
+                    android:id="@+id/content_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/card_detail_general"
+                    >
+                </FrameLayout>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_detail_fechas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/content_request"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/icon_calendar_date_start"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:src="@drawable/ic_small_calendar"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginStart="@dimen/default_margin"
+                            />
+                        <TextView
+                            android:id="@+id/textView_detail05_fecha_inicio"
+                            android:text="@string/detail_fecha_inicio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toEndOf="@+id/icon_calendar_date_start"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginStart="@dimen/margin_min"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/textView_detail05_fecha_inicio_descripcion"
+                            android:text="@string/detail_fecha_inicio_descripcion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="@id/textView_detail05_fecha_inicio"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_detail05_fecha_inicio"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginBottom="@dimen/margin_min"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            />
+                        <ImageView
+                            android:id="@+id/icon_calendar_date_end"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/textView_detail05_fecha_fin"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:src="@drawable/ic_small_calendar"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginEnd="@dimen/margin_min"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_fecha_fin"
+                            android:text="@string/detail_fecha_fin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginEnd="36dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/textView_detail05_fecha_fin_descripcion"
+                            android:text="@string/detail_fecha_fin_descripcion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="@id/textView_detail05_fecha_fin"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_detail05_fecha_fin"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_detail_observacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_detail_fechas"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/margin_min"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/icon_comments"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:src="@drawable/ic_commentary"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:layout_marginBottom="@dimen/default_margin"
+                            android:layout_marginStart="@dimen/default_margin"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_observaciones"
+                            android:text="@string/detail_observacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toEndOf="@+id/icon_comments"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginStart="@dimen/margin_min"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView_detail05_observaciones_descripcion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="@dimen/margin_min"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginBottom="@dimen/margin_min"
+                            android:textSize="12sp"
+                            android:text="@string/detail_observacion_descripcion"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_detail05_observaciones" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <TextView
+                    android:id="@+id/textView_detail05_seguimientos"
+                    android:text="@string/detail_seguimiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_detail_observacion"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_tracking_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_min"
+                    android:layout_marginBottom="@dimen/margin_min"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_detail05_seguimientos">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+
+        >
+        <ImageButton
+            android:id="@+id/button_detail05_accept"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/text_accept"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_in_center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="@dimen/default_margin"
+            android:src="@drawable/ic_checked"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/bottom_button_bg_left"
+            />
+
+        <ImageButton
+            android:id="@+id/button_detail05_reject"
+            android:src="@drawable/ic_reject"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/bottom_button_bg_right"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_in_center"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_in_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

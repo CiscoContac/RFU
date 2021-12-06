@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/toolbar3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#2196F3"
+                android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                >
+
+            </ImageButton>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="TITULO"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:background="@drawable/textgrad"
+            android:gravity="center"
+            android:text="DEUDA TRIBUTARIA"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite" />
+
+
+
+    <!-- Vertical Main -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border_layout"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="30dp"
+    >
+
+
+
+            <!-- Horizontal 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <!-- Vertical 1-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="60dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="30dp"
+                    android:gravity="center"
+                    android:text="Monto a pagar en US$"
+                    android:textColor="@color/colorBlack"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="US$ 11,494.00"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+
+            <!-- Vertical 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="60dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="30dp"
+                    android:gravity="center"
+                    android:text="Último día de pago"
+                    android:textColor="@color/colorBlack" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="31/12/9999"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+
+            <!-- Vertical 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="30dp"
+                    android:gravity="center"
+                    android:text="Fecha de Cancelación"
+                    android:textColor="@color/colorBlack" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="---"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    <!-- Horizontal 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+
+        <!-- Vertical 1-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="115dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="30dp"
+                android:gravity="center"
+                android:text="Tipo de Cancelación"
+                android:textColor="@color/colorBlack" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="---"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/border_layout"
+    android:layout_marginTop="30dp"
+    >
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="#4CAF50"
+        android:layout_marginLeft="20dp"
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Liquidaciones de Cobranza"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="80dp"
+
+        >
+    </TextView>
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_right"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginLeft="320dp"
+
+        ></ImageButton>
+</LinearLayout>
+
+</LinearLayout>

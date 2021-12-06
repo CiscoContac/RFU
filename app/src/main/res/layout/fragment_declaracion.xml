@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.declaracion.DeclaracionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:background="@android:color/white"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_modalidad"/>
+
+                            <TextView
+                                android:id="@+id/text_view_modalidad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_tipo_embarque" />
+
+                            <TextView
+                                android:id="@+id/text_view_tipo_embarque"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_garantia_art160"/>
+
+                            <ImageView
+                                android:id="@+id/image_view_respuesta_garantia_art160"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/green_700"
+                                android:src="@drawable/ic_success" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_tipo_despacho"/>
+
+                            <TextView
+                                android:id="@+id/text_view_tipo_despacho"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_importador_exportador_oea" />
+
+                            <ImageView
+                                android:id="@+id/image_view_respuesta_importador_exportador_oea"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/red_700"
+                                android:src="@drawable/ic_success" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textview_subtitulos_black_bold_medium"
+                                    android:text="@string/text_importador_exportador" />
+
+                                <TextView
+                                    android:id="@+id/text_view_importador_exportador"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textview_textos_gray_medium"
+                                    android:text="TextView" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textview_subtitulos_black_bold_medium"
+                                    android:text="@string/text_agente_aduanas"/>
+
+                                <TextView
+                                    android:id="@+id/text_view_agente_aduanas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textview_textos_gray_medium"
+                                    android:text="TextView" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textview_subtitulos_black_bold_medium"
+                                    android:text="@string/text_consignatario"/>
+
+                                <TextView
+                                    android:id="@+id/text_view_ruc_nombre_consignatario"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textview_textos_gray_medium"
+                                    android:text="TextView" />
+
+                                <TextView
+                                    android:id="@+id/text_view_domicilio_consignatario"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textview_textos_gray_medium"
+                                    android:text="TextView" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_ubicacion_mercancia"/>
+
+                            <TextView
+                                android:id="@+id/text_view_nombre_organizacion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <TextView
+                                android:id="@+id/text_view_direccion_organizacion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_valor_fob"/>
+
+                            <TextView
+                                android:id="@+id/text_view_valor_fob"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_total_clausula_venta" />
+
+                            <TextView
+                                android:id="@+id/text_view_total_clausula_venta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_comision" />
+
+                            <TextView
+                                android:id="@+id/text_view_comision"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_cantidad_series"/>
+
+                            <TextView
+                                android:id="@+id/text_view_cantidad_series"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_flete"/>
+
+                            <TextView
+                                android:id="@+id/text_view_flete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_otros_gastos_deducibles"/>
+
+                            <TextView
+                                android:id="@+id/text_view_otros_gastos_deducibles"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_peso_bruto"/>
+
+                            <TextView
+                                android:id="@+id/text_view_peso_bruto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_cantidad_bultos"/>
+
+                            <TextView
+                                android:id="@+id/text_view_cantidad_bultos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_seguro"/>
+
+                            <TextView
+                                android:id="@+id/text_view_seguro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_total_ajustes"/>
+
+                            <TextView
+                                android:id="@+id/text_view_total_ajustes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_peso_neto"/>
+
+                            <TextView
+                                android:id="@+id/text_view_peso_neto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_almacen"/>
+
+                            <TextView
+                                android:id="@+id/text_view_direccion_almacen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_subtitulos_black_bold_medium"
+                                android:text="@string/text_empresa_transporte"/>
+
+                            <TextView
+                                android:id="@+id/text_view_ruc_nombre_empresa_transporte"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textview_textos_gray_medium"
+                                android:text="TextView" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/btnDocumentosTransporte"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/image_button_documentos_transporte"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/green_700"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                style="@style/textview_subtitulos_black_medium"
+                                android:layout_weight="8"
+                                android:text="@string/text_documentos_transporte" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <ImageView
+                                android:id="@+id/image_button_documentos_transporte2"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_right_arrow_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnFacturasComerciales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/image_button_facturas_comerciales"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/green_700"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                style="@style/textview_subtitulos_black_medium"
+                                android:layout_weight="8"
+                                android:text="@string/text_facturas_comerciales" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <ImageView
+                                android:id="@+id/image_button_facturas_comerciales2"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_right_arrow_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnContenedores"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/image_button_contenedores_precintos"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/green_700"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                style="@style/textview_subtitulos_black_medium"
+                                android:layout_weight="8"
+                                android:text="@string/text_contenedores_precintos" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <ImageView
+                                android:id="@+id/image_button_contenedores_precintos2"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_right_arrow_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnInformesSini"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/image_button_informe_resultado_sini"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/green_700"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                style="@style/textview_subtitulos_black_medium"
+                                android:layout_weight="8"
+                                android:text="@string/text_informe_sini" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <ImageView
+                                android:id="@+id/image_button_informe_resultado_sini2"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_right_arrow_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnRecepcionMercancias"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/image_button_informacion_rm"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/green_700"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                style="@style/textview_subtitulos_black_medium"
+                                android:layout_weight="8"
+                                android:text="@string/text_informacion_rm" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <ImageView
+                                android:id="@+id/image_button_informacion_rm2"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_right_arrow_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnRecepcionCarga"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/image_button_informacion_rce"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/green_700"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                style="@style/textview_subtitulos_black_medium"
+                                android:layout_weight="8"
+                                android:text="@string/text_informacion_rce" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <ImageView
+                                android:id="@+id/image_button_informacion_rce2"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_right_arrow_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnPaseNaranjaRojo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/image_button_sustento_pase_naranja_rojo"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/green_700"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                style="@style/textview_subtitulos_black_medium"
+                                android:layout_weight="8"
+                                android:text="Sustento de pase naranja a rojo (Solo ingreso)" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5" />
+
+                            <ImageView
+                                android:id="@+id/image_button_sustento_pase_naranja_rojo2"
+                                android:layout_width="0dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:contentDescription="Enter How Much Cookies You Want"
+                                android:src="@drawable/ic_right_arrow_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_opciones1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scrollview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/table_header">
+
+                    <ImageButton
+                        android:id="@+id/image_button_estado_rf"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:contentDescription="Enter How Much Cookies You Want"
+                        android:src="@drawable/ic_see_details" />
+
+                    <ImageButton
+                        android:id="@+id/image_button_despachador_aduanero"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:contentDescription="Enter How Much Cookies You Want"
+                        android:src="@drawable/ic_see_details" />
+
+                    <ImageButton
+                        android:id="@+id/image_button_funcionarios_rfu"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:contentDescription="Enter How Much Cookies You Want"
+                        android:src="@drawable/ic_see_details" />
+
+                    <ImageButton
+                        android:id="@+id/image_button_iniciar_rfu"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:contentDescription="Enter How Much Cookies You Want"
+                        android:src="@drawable/ic_see_details" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,346 @@
+<resources>
+    <string name="app_name">SUNAT-Solicitudes</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_card_request_emisor">[Emisor Name]</string>
+    <string name="title_card_request_type">[Request Type]</string>
+    <string name="title_card_request_code">[Request CODE]</string>
+    <string name="text_accept">APROBAR</string>
+    <string name="text_reject">RECHAZAR</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Menu Principal</string>
+    <string name="nav_request">Solicitudes</string>
+    <string name="nav_settings">Configuración</string>
+    <string name="nav_about_us">Sobre Nosotros</string>
+    <string name="nav_ballot_paper">Papeletas</string>
+
+    <string name="openDrawer">open_drawer</string>
+
+    <string name="closeDrawer">close_drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Remove or change this placeholder text -->
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Opcion 1</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_configuration">Opcion 2</string>
+    <string name="title_more">More Options</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search_hint">Nombre o Nro. de Sol </string>
+
+    <string name="action_search">Buscar</string>
+    <string name="action_apply">Aplicar</string>
+    <string name="action_clear">Limpiar</string>
+    <string name="home_title">Solicitudes Pendientes</string>
+    <string name="title_activity_filter">ActivityFilter</string>
+    <string name="detail_seguimiento">SEGUIMIENTOS</string>
+
+    <string name="detail_solicitante">Solicitante</string>
+    <string name="detail_marcacion_hora">Hora Marcación</string>
+    <string name="detail_marcacion">Fecha Marcación</string>
+    <string name="detail_diagnostico">Diagnóstico</string>
+    <string name="detail_CMP">Código Colegiatura (CMP)</string>
+    <string name="detail_documento">Documento</string>
+    <string name="detail_asunto">Asunto</string>
+    <string name="detail_tipo">Tipo</string>
+    <string name="detail_revisado">Revisado por</string>
+    <string name="detail_fecha_marcacion">Fecha Marcación</string>
+    <string name="detail_fecha_emision">Fecha de Emisión</string>
+    <string name="detail_fecha_inicio">Fecha Inicio</string>
+    <string name="detail_fecha_fin">Fecha Fin</string>
+    <string name="detail_marcacion_incorrecta">Marcación Incorrecta</string>
+    <string name="detail_observacion">Observaciones</string>
+    <string name="detail_CMP_descripcion">[Código Colegiatura]</string>
+    <string name="detail_documento_descripcion">[Documento]</string>
+    <string name="detail_diagnostico_descripcion">[Diagnostico]</string>
+    <string name="detail_tipo_descripcion">[Tipo de solicitud]</string>
+    <string name="detail_asunto_descripcion">[Asunto]</string>
+    <string name="detail_revisado_descripcion">[Revisor]</string>
+    <string name="detail_solicitante_descripcion">[Solicitante]</string>
+    <string name="detail_fecha_marcacion_descripcion">[Fecha Marcación]</string>
+    <string name="detail_fecha_emision_descripcion">[Fecha de Emisión]</string>
+    <string name="detail_fecha_inicio_descripcion">[Fecha Inicio]</string>
+    <string name="detail_fecha_fin_descripcion">[Fecha Fin]</string>
+    <string name="detail_marcacion_incorrecta_descripcion">[Marcación Incorrecta]</string>
+    <string name="detail_observacion_descripcion">[Observaciones]</string>
+    <string name="detail_papeleta_motivo">Motivo</string>
+    <string name="detail_marcacion_descripcion">[Fecha Marcacion]</string>
+    <string name="detail_marcacion_hora_descripcion">[Hora Marcacion]</string>
+    <string name="nav_clock_attendance">Marcaciones</string>
+    <string-array name="nav_item_activity_titles">
+        <item>SUNAT SIRH</item>
+        <item>Solicitudes Pendientes</item>
+        <item>Papeletas Pendientes</item>
+        <item>Marcaciones</item>
+    </string-array>
+
+
+    <string-array name="criterios_menu">
+        <item>Seleccione un criterio</item>
+        <item>Número</item>
+        <item>Asunto</item>
+        <item>Registrada antes del</item>
+        <item>Emisor (Código de registro)</item>
+        <item>Derivada antes del</item>
+        <item>Último responsable (Código de registro)</item>
+    </string-array>
+
+    <string-array name="criterios_menu_papeletas">
+        <item>Seleccione un criterio</item>
+        <item>Registro</item>
+        <item>Unidad Organizacional</item>
+    </string-array>
+
+    <!-- consultar declaracion -->
+    <string name="text_modalidad">Modalidad</string>
+    <string name="text_tipo_embarque">Tipo de Embarque</string>
+    <string name="text_garantia_art160">Garantía Art. 160</string>
+    <string name="text_tipo_despacho">Tipo de Depacho</string>
+    <string name="text_importador_exportador_oea">Importador/Exportador OEA</string>
+    <string name="text_importador_exportador">Importador/Exportador</string>
+    <string name="text_agente_aduanas">Agente de Aduanas</string>
+    <string name="text_ubicacion_mercancia">Ubicación de la mercancía</string>
+    <string name="text_consignatario">Consignatario</string>
+    <string name="text_valor_fob">Valor FOB US$</string>
+    <string name="text_total_clausula_venta">Total Claúsula Venta</string>
+    <string name="text_comision">Comisión</string>
+    <string name="text_cantidad_series">Cantidad de Series</string>
+    <string name="text_flete">Flete US$</string>
+    <string name="text_otros_gastos_deducibles">Otros Gastos Deducibles</string>
+    <string name="text_peso_bruto">Peso Bruto</string>
+    <string name="text_cantidad_bultos">Cantidad de Bultos</string>
+    <string name="text_seguro">Seguro US$</string>
+    <string name="text_total_ajustes">Total Ajustes</string>
+    <string name="text_peso_neto">Peso Neto</string>
+    <string name="text_almacen">Almacén</string>
+    <string name="text_empresa_transporte">Empresa de Transporte</string>
+    <string name="text_documentos_transporte">Documentos de Transporte</string>
+    <string name="text_facturas_comerciales">Facturas Comerciales</string>
+    <string name="text_contenedores_precintos">Contenedores / Precintos</string>
+    <string name="text_informe_sini">Informe de Resultado de la Inspección no Intrusiva (SINI)</string>
+    <string name="text_informacion_rm">Información de Recepción de Mercancías (RM) (Solo Salida)</string>
+    <string name="text_informacion_rce">Información de Relación de Carga a Embarcar (RCE) (Solo Salida)</string>
+
+    <string name="title_documentos_transporte">LISTADO DE DOCUMENTOS DE TRANSPORTE</string>
+    <string name="text_documento_transporte_mod1">NEK0-NYAN-001</string>
+    <string name="text_documento_transporte_mod2">NEK0-NYAN-023</string>
+    <string name="text_documento_transporte_mod3">NEK0-NYAN-034</string>
+
+    <string name="title_facturas_comerciales">LISTADO DE FACTURAS COMERCIALES</string>
+    <string name="text_factura_comercial_mod1">E001-009876</string>
+    <string name="text_factura_comercial_mod2">E101-000100</string>
+    <string name="text_factura_comercial_mod3">E201-000021</string>
+
+    <string name="title_contenedores">LISTADO DE CONTENEDORES</string>
+    <string name="text_contenedor_mod1">CMAU0327214</string>
+    <string name="text_contenedor_mod2">CRSU1001179</string>
+    <string name="text_contenedor_mod3">TTNU1169272</string>
+    <string name="text_precintos">Precintos: </string>
+    <string name="text_precintos_mod1">P4200208</string>
+    <string name="text_precintos_mod2">P4200209</string>
+    <string name="text_precintos_mod3">P4200210</string>
+    <string name="text_escaner">Escaner: </string>
+    <string name="text_escaner_mod">---</string>
+
+    <string name="title_indicadores_riesgo">INDICADORES DE RIESGO</string>
+    <string name="text_tipo_seleccion_mod1">Por DAM</string>
+    <string name="text_tipo_seleccion_mod2">CRSU1001179</string>
+    <string name="text_tipo_seleccion_mod3">TTNU1169272</string>
+    <string name="text_unidad_seleccion_mod1">Declaración</string>
+    <string name="text_unidad_seleccion_mod2">20</string>
+    <string name="text_unidad_seleccion_mod3">5</string>
+    <string name="text_modelo">FMV</string>
+    <string name="text_serie">0</string>
+    <string name="text_fraude">INCUMPLIMIENTOS RELACIONADOS A MERCANCÍAS RESTRINGIDAS</string>
+    <string name="text_detalle">VERIFICAR MARCA Y MODELO DE LAS MERCANCÍAS, VALOR DE LA MERCANCÍA</string>
+
+    <string name="title_sini">INFORME DE INSPECCIÓN NO INTRUSIVA</string>
+    <string name="text_resultado">Resultado</string>
+    <string name="text_hipotesis">Hipótesis</string>
+    <string name="text_resultado_mod">SOSPECHOSO</string>
+    <string name="text_hipotesis_mod">
+        Three line text string example with two actions. One to two lines is preferable.
+        Three lines should be consideraded the maximum string length on desktop in order
+        to keep messages short and actionable.  </string>
+    <!-- -->
+    <string name="title_documentos_digitalizados">DOCUMENTOS DIGITALIZADOS</string>
+    <string name="text_documentos_sustente_despacho">DOCUMENTOS QUE SUSTENTAN EL DESPACHO</string>
+    <string name="text_documentos_sustente_diligencia">DOCUMENTOS QUE SUSTENTAN LA DILIGENCIA DE DESPACHO</string>
+    <string name="text_tipo_documemto">Tipo documento</string>
+    <string name="text_tipo_documemto_view">Tipo documento:</string>
+    <string name="text_observaciones">Observaciones</string>
+    <string name="text_observaciones_view">Observaciones:</string>
+    <string name="text_fecha_atencion">Fecha de atención</string>
+    <string name="text_fecha_atencion_view">Fecha de atención:</string>
+    <string name="text_proceso_origen">Proceso de Origen</string>
+    <string name="text_proceso_origen_view">Proceso de Origen:</string>
+    <string name="text_descarga">Descarga</string>
+
+
+
+    <string name="title_listado_items">LISTADO DE ITEMS</string>
+    <string name="minicomponente">Minicomponente LG CL87</string>
+    <string name="subpartida_nacional">Subpartida Nacional</string>
+    <string name="sb_numero">85279100000</string>
+    <string name="parlante_blue">PARLANTE BLUEETOOH PORTATIL LG PM7</string>
+    <string name="dam1182021">DAM 118-2021-10-000234-SERIE1</string>
+    <string name="Item">Item</string>
+    <string name="EstadodelaMercancia">Estado de la Mercancia</string>
+    <string name="nuevobueno">10- NUEVO/BUENO</string>
+    <string name="descripciondemerca">Descripción de la Mercancía</string>
+    <string name="TEXTODESCRIP">MINICOMPONENTE LG, CL87 MINI CD// MINI-HI-FI-SYSTEM PRESENTACION:
+    CAJA UNICA USO: COMERCIAL, SPN BAJO PROTESTO, SE PRESENTA APELACION CON EXP 000-2020-1206747</string>
+    <string name="Proveedor">Proveedor</string>
+    <string name="ESCARATE">43281510ESCARATE FARFAN JOHAN ALBERTO</string>
+    <string name="FOBUNITARIO">FOB unitario US$</string>
+    <string name="FOBNUMERO">500.00</string>
+    <string name="Factura">Factura</string>
+    <string name="FACTURANUMERO">E001-0029394</string>
+    <string name="FECHADEFACTURA">Fecha de Factura</string>
+    <string name="FECHADEFACTURANUM">01/08/2021</string>
+    <string name="numero_cantidad_unidad">50.00</string>
+    <string name="cantidad_numero_comercial">Cantidad Unidad Comercial</string>
+
+    =======
+    <string name="title_rm">RECEPCIÓN DE MERCANCÍAS (RM)</string>
+    <string name="text_cantidad_bultos_rm_mod">10</string>
+
+    <string name="title_rce">RECEPCIÓN DE CARGAS A EMBARCAR (RCE)</string>
+    <string name="text_cantidad_bultos_rce_mod">20</string>
+
+    <string name="title_sustento_pase_naranja_rojo">PASE DE NARANJA A ROJO</string>
+    <string name="text_motivo">Motivo</string>
+    <string name="text_sustento">Sustento</string>
+    <string name="text_motivo_mod">03 - Posible incorrecta declaración de mercancías</string>
+    <string name="text_sustento_mod">
+        Three line text string example with two actions. One to two lines is preferable.
+        Three lines should be consideraded the maximum string length on desktop in order
+        to keep messages short and actionable.  </string>
+
+    <string name="title_rfu">ESTADOS DE RECONOCIMIENTO FISICO</string>
+    <string name="text_estados_reconocimiento_fisico">Estados de Reconocimiento Físico</string>
+    <string name="text_rfu_mod1">03 - Reconocimiento Físico o Inconcluso</string>
+    <string name="text_rfu_mod2">04 - No se presentó a Reconocimiento Físico</string>
+    <string name="text_rfu_mod3">05 - DAM Notificada sin realizar Reconocimiento Físico</string>
+    <string name="text_rfu_mod4">06 - Inmovilización Total de Mercancía</string>
+    <string name="text_rfu_mod5">09 - Reconocimiento Físico de Oficio</string>
+    <string name="text_descripcion">Descripción</string>
+
+    <string name="title_funcionarios_reconocimiento_fisico">FUNCIONARIOS DE RECONOCIMIENTO
+        FÍSICO ÚNICO</string>
+    <string name="text_tipo_funcionario_mod">Funcionario del RFU/RFU SINI</string>
+    <string name="text_numero_nombres_apellidos_mod">9867 - FIORELLA GARCÍA VILLARÁN FLORES</string>
+    <string name="text_correo_electronico_mod">fgarciav@sunat.edu.pe</string>
+    <string name="text_telefono_principal">961696798</string>
+    <string name="text_telefono_secundario">961696799</string>
+    <string name="text_descripcion_imagen">Contenido de la imagen.</string>
+
+    <string name="title_despachador_aduanas">DESPACHADOR DE ADUANAS</string>
+    <string name="text_nacionalidad">Nacionalidad</string>
+    <string name="text_button_consultar">Consultar</string>
+    <string name="title_listado_fotos">LISTADO DE FOTOS</string>
+    <string name="serie_1">SERIE 1</string>
+    <string name="item_1">ITEM 1</string>
+    <string name="foto_1">FOTO 1</string>
+    <string name="serie_2">SERIE 2</string>
+    <string name="foto_2">FOTO 2</string>
+    <string name="foto_3">FOTO 3</string>
+    <string name="text_eliminacion">¿Desea eliminar la foto cargada? El funcionario de despacho podrá ver afectada la revisión realizada.</string>
+    <string name="text_iniciar_rfu">¿Desea inicir la Diligencia de Reconocimiento Físico Único?</string>
+    <string-array name="tipo_documento">
+        <item>DNI</item>
+        <item>Pasaporte</item>
+        <item>CE (Carnet de Extranjería)</item>
+        <item>PTP (Permiso Temporal de Trabajo)</item>
+    </string-array>
+
+    <string name="text_estado_reconocimiento_fisico">Estado de Reconocimiento Físico</string>
+    <string name="content_text_estado_reconocimiento_fisico">
+        Gráfico de barras por estado de las
+        declaraciones, versus cantidad de
+        declaraciones.  </string>
+    <string name="text_tiempos_atencion">Tiempos de Atención</string>
+    <string name="content_text_tiempos_atencion">
+        Gráfico de barras de las declaraciones
+        versus el tiempo de atención de las
+        mismas.  </string>
+    <string name="text_tiempos_promedio">Tiempos Promedio</string>
+    <string name="content_text_tiempos_promedio">
+        Reporte que muestra por funcionario las
+        declaraciones asignadas, pendientes
+        de atención y sin atender.  </string>
+
+    <string name="title_estado_reconocimiento_fisico_dam">ESTADO DE RECONOCIMIENTO
+    FÍSICO DE LA DAM</string>
+    <string name="text_periodo_asignacion">Periodo de Asignación</string>
+    <string name="text_periodo_maximo">Periodo máximo de 30 días</string>
+    <string name="text_funcionarios">Funcionarios</string>
+    <string name="text_formato_fecha">dd/mm/aaaa</string>
+
+    <string-array name="lista_empleados">
+        <item>1234 - VANNESSANNE LASON KEEBLER</item>
+        <item>1234 - VANNESSANNE LASON KEEBLER</item>
+        <item>1234 - VANNESSANNE LASON KEEBLER</item>
+        <item>1234 - VANNESSANNE LASON KEEBLER</item>
+        <item>1234 - VANNESSANNE LASON KEEBLER</item>
+        <item>1234 - VANNESSANNE LASON KEEBLER</item>
+    </string-array>
+
+    <string name="title_tiempos_promedio_atencion">TIEMPOS PROMEDIO DE ATENCIÓN</string>
+    <string name="text_regimen">Régimen</string>
+    <string-array name="lista_regimenes">
+        <item>10 - IMPORTACION DEFINITIVA AL CONSUMO</item>
+        <item>10 - IMPORTACION DEFINITIVA AL CONSUMO</item>
+        <item>10 - IMPORTACION DEFINITIVA AL CONSUMO</item>
+        <item>10 - IMPORTACION DEFINITIVA AL CONSUMO</item>
+        <item>10 - IMPORTACION DEFINITIVA AL CONSUMO</item>
+    </string-array>
+
+    <string name="text_numero">Nro.</string>
+    <string name="text_funcionario">Fucionario Aduanero</string>
+    <string name="text_dams_asignadas">Cant. de DAMs Asignadas</string>
+    <string name="text_tiempo_promedio_atencion">Tiempo promedio de atención RFU</string>
+    <string name="text_dams_pendientes">DAMs Pendientes sin Atención</string>
+    <string name="text_tiempo_promedio_sin_atencion">Tiempo promedio sin atención</string>
+
+
+    <string name="title_tiempos_atencion">TIEMPOS DE ATENCIÓN</string>
+    <string name="text_fecha_asignacion">Fecha de Asignación</string>
+    <string name="title_notas">Notas</string>
+    <string name="nav_bandeja">Bandeja</string>
+    <string name="nav_prueba">Prueba-Declaracion</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_registrar_diligencia_rfu">Registrar diligencia RFU</string>
+    <string name="estadoDam">RF con registro de diligencia</string>
+    <string name="lblFechaAsignacion">02/12/221 15:30</string>
+    <string name="lblFechaAsignacionAdapter">Fecha asignación</string>
+    <string name="ejemploEstado">RF con Registro de Diligencia</string>
+    <string name="lblDamAdapter">DAM:</string>
+    <string name="lblEjemploNumDam">118-2021-40-001234</string>
+    <string name="lblFechaAsigAdapter">Fecha asignación:</string>
+    <string name="lblEjemploFechaAsig">12/12/2021 15:30</string>
+    <string name="lblFechaNumeracion">Fecha de Numeración:</string>
+    <string name="lblConsignatario">Consignatario:</string>
+    <string name="lblEjemploRuc">2010001106 - IMPORTADORES DEL PERU SA.</string>
+    <string name="title_listado_series">LISTADO DE SERIES</string>
+    <string name="title_certificado_reposicion">CERTIFICADO DE REPOSICION EN FRANQUICIA</string>
+    <string name="text_registro_nota">Se ha registrado correctamente la nota.</string>
+    <string name="text_eliminacion_nota">¿Desea eliminar la nota cargada? El funcionario de despacho podrá ver afectada la revisión realizada.</string>
+    <string name="text_registro_rfu">Se ha registrado correctamente el estado de reconocimiento físico.</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="comunicados">Comunicados</string>
+    <string name="reporte_series">Reporte Series</string>
+    <string name="oea">OEA</string>
+    <string name="garantia_160">Garantía Art 160</string>
+    <string name="fotos">Fotos</string>
+    <string name="notas">Notas</string>
+    <string name="ver_diligencia">Ver Diligencia</string>
+
+    <string name="title_deuda_tributaria">DEUDA TRIBUTARIA</string>
+    <string name="title_liquidaciones_cobranza">LISTA DE LIQUIDACIONES DE COBRANZA</string>
+
+
+</resources>

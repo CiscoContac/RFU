@@ -1,0 +1,34 @@
+﻿{
+    "filtros": [
+
+      {
+        "codTipo": "06",
+        "desSolicitud": "Licencia sin goce de haber hasta 3 días"
+      },
+      {
+        "codTipo": "21",
+        "desSolicitud": "Licencia por Enfermedad"
+      },
+      {
+        "codTipo": "24",
+        "desSolicitud": "Licencia por Fallecimiento de familiar directo"
+      },
+      {
+        "codTipo": "53",
+        "desSolicitud": "Licencia por Paternidad"
+      },
+      {
+        "codTipo": "07",
+        "desSolicitud": "Vacaciones"
+      },
+      {
+        "codTipo": "102",
+        "desSolicitud": "Comision de servicio por dia"
+      },
+      {
+        "codTipo": "124",
+        "desSolicitud": "Autorización de Labor Excepcional"
+      }
+
+    ]
+}

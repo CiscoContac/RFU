@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "896907288064",
+    "firebase_url": "https://sirh-1840a.firebaseio.com",
+    "project_id": "sirh-1840a",
+    "storage_bucket": "sirh-1840a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896907288064:android:ea7bffaa82253b8c",
+        "android_client_info": {
+          "package_name": "pe.gob.sunat.base.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896907288064-k5klgl3bi2dg1esigrga0e44ffm3mp1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF9ZgXW9Nvy0Ma75uaPb9jddbpMnFs8n4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896907288064-k5klgl3bi2dg1esigrga0e44ffm3mp1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896907288064:android:ce77e4a83fefbcc5",
+        "android_client_info": {
+          "package_name": "pe.gob.sunat.recurso3.humano.solicitudes.SolicitudesSIRH"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896907288064-k5klgl3bi2dg1esigrga0e44ffm3mp1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF9ZgXW9Nvy0Ma75uaPb9jddbpMnFs8n4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896907288064-k5klgl3bi2dg1esigrga0e44ffm3mp1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

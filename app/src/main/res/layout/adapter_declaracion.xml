@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/adDeclaracion"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorBgGray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="[Estado]"
+            style="@style/textview_subtitulos_black_bold_small"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblDamAdapter"
+            style="@style/textview_subtitulos_black_bold_small" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[000-0000-00-0000]"
+            style="@style/textview_textos_gray_small" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblFechaAsignacionAdapter"
+            style="@style/textview_subtitulos_black_bold_small" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[dd/MM/aaaa hh:mm]"
+            style="@style/textview_textos_gray_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Fecha de Numeración"
+                    style="@style/textview_subtitulos_black_bold_small" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="[dd/MM/aaaa hh:mm]"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="20dp"
+                    style="@style/textview_textos_gray_small" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consignatario:"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    style="@style/textview_subtitulos_black_bold_small" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="20201049130 - IMPORTADORES DEL PERU SA"
+                    style="@style/textview_textos_gray_small" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Cantidad de Series:"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    style="@style/textview_subtitulos_black_bold_small" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="[1]"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="20dp"
+                    style="@style/textview_textos_gray_small" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Almacén: "
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    style="@style/textview_subtitulos_black_bold_small" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="30dp"
+                    android:text="20129929321 - DEPOSITO TEMPORAL"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    style="@style/textview_textos_gray_small" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de selección: "
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    style="@style/textview_subtitulos_black_bold_small" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:text="DAM"
+                    style="@style/textview_textos_gray_small" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agencia:"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    style="@style/textview_subtitulos_black_bold_small" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="30dp"
+                    android:text="20201049130 - RANSA AGENCIAS SA"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    style="@style/textview_textos_gray_small" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/favoritos"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/colorWhite"
+                    app:icon="@drawable/star_outline"
+                    app:iconGravity="top"
+                    app:iconTint="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/comunicados"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/colorWhite"
+                    app:icon="@drawable/message_text"
+                    app:iconGravity="top"
+                    app:iconTint="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/reporte_series"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/colorWhite"
+                    app:icon="@drawable/cloud_download"
+                    app:iconGravity="top"
+                    app:iconTint="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/oea"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/colorWhite"
+                    app:icon="@drawable/medal"
+                    app:iconGravity="top"
+                    app:iconTint="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/garantia_160"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/colorWhite"
+                    app:icon="@drawable/certificate"
+                    app:iconGravity="top"
+                    app:iconTint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

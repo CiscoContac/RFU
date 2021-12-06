@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="5dp"
+        android:backgroundTint="@color/grey_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/image_button_contenedores_a"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/ic_photos_library" />
+
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/text_num_contenedor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/text_contenedor_mod1"
+                    style="@style/textview_subtitulos_black_large" />
+
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/image_button_deploy_a"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Enter How Much Cookies You Want"
+                    android:src="@drawable/ic_arrowdown"
+                    android:tint="@color/colorBlack"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="5dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/detalle_modificar_preciento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="Último Precinto actual:"
+                    style="@style/textview_subtitulos_black_bold_medium" />
+
+                <TextView
+                    android:id="@+id/text_ultimo_oprecinto_actual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/text_precintos_mod1"
+                    style="@style/textview_subtitulos_black_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Último preciento modificado: "
+                    style="@style/textview_subtitulos_black_bold_medium" />
+
+                <TextView
+                    android:id="@+id/text_ultimo_precinto_modificado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="Sin modificar"
+                    style="@style/textview_subtitulos_black_medium" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

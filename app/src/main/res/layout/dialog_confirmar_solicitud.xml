@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/dialog_bg"
+
+    >
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese observación"
+        android:padding="10dp"
+        android:background="@color/colorWhite"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <EditText
+        android:id="@+id/editText_dialog_observacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:textSize="15dp"
+        android:layout_below="@id/dialog_title"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:scrollbars="vertical"
+        android:fontFamily="@font/helvetica_bold"
+        android:imeOptions="actionDone"
+        />
+    <Button
+        android:id="@+id/button_dialog_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRMAR"
+        android:paddingStart="@dimen/default_margin"
+        android:paddingEnd="@dimen/default_margin"
+        android:layout_alignParentRight="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_below="@id/editText_dialog_observacion"
+        android:textColor="@color/colorPrimary"
+        android:elevation="0dp"
+        android:shadowColor="@color/colorWhite"
+        />
+    <Button
+        android:id="@+id/button_dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR"
+        android:layout_toLeftOf="@id/button_dialog_confirm"
+        android:paddingStart="@dimen/default_margin"
+        android:paddingEnd="@dimen/default_margin"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_marginRight="3dp"
+        android:layout_alignBaseline="@id/button_dialog_confirm"
+        android:textColor="@color/colorPrimary"
+        android:elevation="0dp"
+        android:shadowColor="@color/colorWhite"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/blue_grey_600</item>
+        <item name="android:dialogTheme">@style/Dialog.Theme</item>
+        <item name="tabTextColor">@color/colorWhite</item>
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+    </style>
+
+    <!--<style name="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextColor">@color/colorBlack</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="tabIndicatorColor">@color/colorPrimaryDark</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabInlineLabel">true</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+    </style>-->
+
+    <style name="Dialog.Theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+        <item name="tabBackground">@drawable/tab_color_selector</item>
+        <item name="tabTextColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarText" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_style_inverse">
+        <item name="android:background">@drawable/button_bg_inverse</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="textviewStyle" >
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!-- ESTILOS ESTANDAR PARA SISTEMA -->
+
+    <!-- SUBTITULOS -->
+    <style name="textview_subtitulos_black_bold_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_subtitulos_black_bold_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_subtitulos_black_bold_large">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_subtitulos_black_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_subtitulos_black_large">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_subtitulos_black_extralarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <!-- TEXTOS -->
+    <style name="textview_textos_gray_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey_600</item>
+    </style>
+
+    <style name="textview_textos_gray_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey_600</item>
+    </style>
+
+    <style name="textview_textos_gray_large">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grey_600</item>
+    </style>
+
+    <style name="textview_textos_gray_extralarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/grey_600</item>
+    </style>
+
+    <style name="textview_textos_black_extrasmall">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_textos_black_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_textos_black_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_textos_black_large">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+
+    <style name="textview_textos_black_extralarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#D7000000</item>
+    </style>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_riesgo"
+            android:checkable="false"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Riesgo" />
+        <item
+            android:id="@+id/nav_comprobante_pago_facturas"
+            android:checkable="false"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Comprobante de pago y/o facturas"/>
+        <item
+            android:id="@+id/nav_deuda_tributaria"
+            android:checkable="false"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Deuda tributaria"
+            />
+        <item
+            android:id="@+id/nav_documentos_digitalizados"
+            android:checkable="false"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Documentos digitalizados"/>
+    </group>
+ <!--  <item
+       android:id="@+id/action_agregar_foto"
+       android:icon="@drawable/menu_circle"
+       android:orderInCategory="100"
+       android:title="@string/action_clear"
+       app:showAsAction="always"
+       />-->
+</menu>

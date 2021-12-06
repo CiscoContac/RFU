@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="margin_min">8dp</dimen>
+    <dimen name="margin_max">24dp</dimen>
+
+    <dimen name="spacing_mlarge">40dp</dimen>
+    <dimen name="sise_5">5dp</dimen>
+    <dimen name="sise_7">7dp</dimen>
+    <dimen name="sise_10">10dp</dimen>
+    <dimen name="sise_15">15dp</dimen>
+    <dimen name="sise_25">25dp</dimen>
+    <dimen name="sise_20">20dp</dimen>
+    <dimen name="sise_24">24dp</dimen>
+    <dimen name="text_margin">8dp</dimen>
+    <dimen name="content_inset_51">10dp</dimen>
+    <dimen name="content_inset_52">10dp</dimen>
+    <dimen name="normalTextSize">25sp</dimen>
+
+
+    <dimen name="content_inset_1">1dp</dimen>
+    <dimen name="content_marginBotton">25dp</dimen>
+    <dimen name="content_inset_small">5dp</dimen>
+    <dimen name="width_line">120sp</dimen>
+    <dimen name="size_bnj">12sp</dimen>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_buscar"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="100"
+        android:title="Buscar"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:iconTint="@color/colorWhite"
+        />
+
+
+    <item android:id="@+id/menu_ordenar" android:alphabeticShortcut="a"
+        android:title="Ordenar por:" android:orderInCategory="1">
+
+        <menu >
+            <group android:id="@+id/group_ordenar" android:checkableBehavior="single">
+                <item android:id="@+id/submenu_o_fechaasig" android:title="Fecha asignación" />
+                <item android:id="@+id/submenu_o_nro_dam" android:title="Número DAM" />
+                <item android:id="@+id/submenu_o_cant_series" android:title="Cantidad de Series" />
+            </group>
+        </menu>
+    </item>
+
+
+
+    <item android:id="@+id/menu_filtrar" android:alphabeticShortcut="b"
+        android:title="Filtrar por:" android:orderInCategory="2">
+        <menu >
+            <group android:id="@+id/group_filtrar" android:checkableBehavior="single">
+                <item android:id="@+id/submenu_f_G160" android:title="Garantía 160" />
+                <item android:id="@+id/submenu_f_OEA" android:title="OEA" />
+                <item
+                    android:id="@+id/submenu_o_favoritos"
+                    android:title="Favoritos" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

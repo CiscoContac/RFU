@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_ordenar_por"
+            android:checkable="false"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Ordenar por:">
+            <menu >
+                <item
+                    android:id="@+id/nav_ordenar_por_numero_serie"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Número de Serie" />
+                <item
+                    android:id="@+id/nav_ordenar_por_subpartida_nacional"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Subpartida Nacional" />
+                <item
+                    android:id="@+id/nav_ordenar_por_descripcion_mercancia"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Descripción de Mercancía" />
+                <item
+                    android:id="@+id/nav_ordenar_por_fob_serie"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="FOB de la Serie" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_filtrar_por"
+            android:checkable="false"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Filtrar por:" >
+            <menu >
+                <item
+                    android:id="@+id/nav_filtrar_por_codigo_liberatorio"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Código Liberatorio" />
+                <item
+                    android:id="@+id/nav_filtrar_por_tpi"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="TPI" />
+                <item
+                    android:id="@+id/nav_filtrar_por_tpn"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="TPN" />
+                <item
+                    android:id="@+id/nav_filtrar_por_todos"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Todos" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_filtrar_por_datos"
+            android:checkable="false"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Filtrar por datos:">
+            <menu >
+                <item
+                    android:id="@+id/nav_filtrar_por_datos_numero_serie"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Numero de Serie"/>
+                <item
+                    android:id="@+id/nav_filtrar_por_datos_numero_spn"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Numero de SPN"/>
+                <item
+                    android:id="@+id/nav_filtrar_por_datos_descripcion_mercancia"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Descripción de la Mercancía"/>
+                <item
+                    android:id="@+id/nav_filtrar_por_datos_fob"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="FOB"/>
+                <item
+                android:id="@+id/nav_filtrar_por_datos_pais_origen"
+                android:checkable="false"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="País de Origen"/>
+                <item
+                    android:id="@+id/nav_filtrar_por_datos_estado_mercancia"
+                    android:checkable="false"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Estado de la Mercancía"/>
+                <item
+                    android:id="@+id/app_bar_search"
+                    android:icon="@drawable/ic_search_black_24dp"
+                    android:title="Buscar"
+                    app:actionViewClass="android.widget.SearchView" />
+            </menu>
+        </item>
+    </group>
+</menu>

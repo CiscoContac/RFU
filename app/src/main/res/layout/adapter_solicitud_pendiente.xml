@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_row_background">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="@string/text_reject"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp">
+
+
+        <ImageButton
+            android:id="@+id/button_request_accept2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:src="@drawable/ic_done_black_24dp"
+
+            />
+        <TextView
+            android:id="@+id/textView_request_emisor2"
+            android:text="@string/title_card_request_emisor"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button_request_accept2"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_request_date2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/detail_fecha_emision"
+            android:textColor="@color/colorSecondaryText"
+            android:textAlignment="textEnd"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_right_arrow_small"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:tint="@color/colorSecondaryText"
+            />
+
+        <TextView
+            android:id="@+id/textView_request_type2"
+            android:text="@string/detail_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_request_emisor2"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/button_request_accept2"
+            android:layout_marginStart="8dp"
+
+            android:textColor="#333"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textView_request_code2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/textView_request_type2"
+            android:layout_toRightOf="@id/button_request_accept2"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorAccent"
+            android:text="[Codigo]"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

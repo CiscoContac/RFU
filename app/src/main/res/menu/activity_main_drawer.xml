@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bandeja"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_bandeja" />
+        <item
+            android:id="@+id/nav_prueba"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_prueba" />cineplanetcinva
+
+        <item
+            android:id="@+id/nav_registro_rfu"
+            android:icon="@drawable/ic_files"
+            android:title="@string/nav_registrar_diligencia_rfu" />
+        <item
+            android:id="@+id/nav_herramientas_gestion_rfu"
+            android:icon="@drawable/ic_files"
+            android:title="Herramientas e Gestion RFU" />
+        <item
+            android:id="@+id/nav_deuda_tributaria"
+            android:icon="@drawable/ic_files"
+            android:title="Deuda tributarua" />
+
+
+
+    </group>
+
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_salir"
+                android:title="Cerrar Sesión" />
+
+        </menu>
+    </item>
+
+</menu>
